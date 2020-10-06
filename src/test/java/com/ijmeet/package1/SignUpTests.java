@@ -7,12 +7,17 @@ import com.ijmeet.pages.SignUppage;
 import com.ijmeet.util.Constant;
 
 public class SignUpTests {
-	@Test
+	@BeforeMethod
 	public void launchBrowser()
 	{
 		Keywords.openBrowser("chrome");
 		Constant.driver.get("https://ijmeet.com/register");
 		System.out.println("Sign up page  open successfully");
+	}
+	
+	public void closeBrowser()
+	{
+		
 	}
 
 }

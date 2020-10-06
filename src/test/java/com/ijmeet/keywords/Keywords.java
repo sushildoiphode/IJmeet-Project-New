@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Keywords {
 	public static void openBrowser(String browser) {
 
-<<<<<<< HEAD
+
 		switch(browser) 
 		{
 		     case "chrome":
@@ -112,7 +112,6 @@ public class Keywords {
 
 	public static void quitBrowser() {
 		Constant.driver.quit();
->>>>>>> 015dbf5bc2964fe3522f0e216ad7fedc8abb5835
 	}
 	
 }
