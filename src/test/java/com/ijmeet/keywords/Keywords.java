@@ -14,6 +14,7 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,6 +32,8 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class Keywords {
+	private static Logger log = Logger.getLogger(Keywords.class);
+
 	public static void openBrowser(String browserName) {
 
 		switch (browserName) {
@@ -48,12 +51,13 @@ public class Keywords {
 			break;
 
 		default:
-			System.out.println("Invalid browser is selected");
+			log.info(" Invalid browser name");
 		}
 	}
 
 	public static void launchUrl(String url) {
 		Constant.driver.get(url);
+		log.info(" Url is launch successfully");
 	}
 
 	public static void clearCookies() {
@@ -96,7 +100,7 @@ public class Keywords {
 			element = Constant.driver.findElement(By.partialLinkText(locatorValue));
 			break;
 		default:
-			System.err.println("Invalid Locator Type");
+			log.info(" Invalid selector type");
 		}
 		return element;
 	}
@@ -121,7 +125,7 @@ public class Keywords {
 
 	public static void mouseHover(String locatorType, String locatorValue) {
 		WebElement element = getWebElement(locatorType, locatorValue);
-		System.out.println(element);
+
 		Actions act = new Actions(Constant.driver);
 		act.moveToElement(element).build().perform();
 	}
@@ -190,18 +194,16 @@ public class Keywords {
 		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
 		String formatteddate = now.format(date);
 		return formatteddate;
-		}
+	}
 
 	private static String getDate() {
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
 		String formattedDate1 = now.format(date);
 		return formattedDate1;
-		}
+	}
 
-	
-	
-	public  void fullPageScreenShot() {
+	public void fullPageScreenShot() {
 		String path = System.getProperty("user.dir");
 		File f = new File(path + "/Screenshot/" + getDate());
 
@@ -211,15 +213,16 @@ public class Keywords {
 			System.out.println("Folder not Created");
 		}
 		File file = new File(f, "/screenshot_" + getDateAndTime() + ".png");
-		AShot ashot=new AShot();
-		Screenshot sc=ashot.shootingStrategy(ShootingStrategies.viewportPasting(2000)).takeScreenshot(Constant.driver);
+		AShot ashot = new AShot();
+		Screenshot sc = ashot.shootingStrategy(ShootingStrategies.viewportPasting(2000))
+				.takeScreenshot(Constant.driver);
 		try {
 			ImageIO.write(sc.getImage(), "PNG", file);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static int displayListCount(String locatorType, String locatorValue) {
 		List<WebElement> element = getListOfWebelements(locatorType, locatorValue);
 		for (WebElement ele : element) {
