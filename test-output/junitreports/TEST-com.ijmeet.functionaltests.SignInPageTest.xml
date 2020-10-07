@@ -44,4 +44,6 @@ at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
   <testcase name="verifySignInTextVisibility" time="0.000" classname="com.ijmeet.functionaltests.SignInPageTest">
     <skipped/>
   </testcase> <!-- verifySignInTextVisibility -->
+<testsuite skipped="0" hostname="Dell-PC" name="com.ijmeet.functionaltests.SignInPageTest" tests="1" failures="0" timestamp="07 Oct 2020 10:50:17 GMT" time="5.168" errors="0">
+  <testcase name="verifySignInTextVisibility" time="5.168" classname="com.ijmeet.functionaltests.SignInPageTest"/>
 </testsuite> <!-- com.ijmeet.functionaltests.SignInPageTest -->

@@ -50,6 +50,7 @@
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
                     <span>C:\Users\abc\AppData\Local\Temp\testng-eclipse--1622528946\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--127816696\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -173,6 +174,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.SessionN
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\abc\AppData\Local\Temp\testng-eclipse--1622528946\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--127816696\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,11 +232,13 @@ data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifySignInTextVisibility')
 data.setCell(0, 2, 'com.ijmeet.functionaltests.SignInPageTest')
 data.setCell(0, 3, 0);
+data.setCell(0, 3, 134);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 134 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -271,6 +275,18 @@ return data;
                 <span class="method-name">openBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">clickOnSignInBtn</span>
+                <span class="method-start">82042 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySignInTextVisibility</span>
+                <span class="method-start">87076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">87213 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
