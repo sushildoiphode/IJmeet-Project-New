@@ -189,18 +189,18 @@ public class Keywords {
 		}
 	}
 
-	private static String getDateAndTime() {
-		LocalDateTime now = LocalDateTime.now();
-		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
-		String formatteddate = now.format(date);
-		return formatteddate;
+			private static String getDateAndTime() {
+				LocalDateTime now = LocalDateTime.now();
+				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
+				String formatteddate = now.format(date);
+				return formatteddate;
 	}
 
-	private static String getDate() {
-		LocalDateTime now = LocalDateTime.now();
-		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
-		String formattedDate1 = now.format(date);
-		return formattedDate1;
+			private static String getDate() {
+				LocalDateTime now = LocalDateTime.now();
+				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
+				String formattedDate1 = now.format(date);
+				return formattedDate1;
 	}
 
 	public void fullPageScreenShot() {
