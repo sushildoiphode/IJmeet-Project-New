@@ -31,6 +31,7 @@ import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
+
 public class Keywords {
 	private static Logger log = Logger.getLogger(Keywords.class);
 
