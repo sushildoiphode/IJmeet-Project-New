@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32757" started-at="2020-10-07T11:37:19Z" finished-at="2020-10-07T11:37:52Z">
+  <suite name="Default suite" duration-ms="59793" started-at="2020-10-08T06:01:22Z" finished-at="2020-10-08T06:02:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32757" started-at="2020-10-07T11:37:19Z" finished-at="2020-10-07T11:37:52Z">
+    <test name="Default test" duration-ms="59793" started-at="2020-10-08T06:01:22Z" finished-at="2020-10-08T06:02:21Z">
       <class name="com.ijmeet.functionaltests.SignInPageTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="openBrowser" is-config="true" duration-ms="31209" started-at="2020-10-07T11:37:19Z" finished-at="2020-10-07T11:37:50Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@5db250b4]" name="openBrowser" is-config="true" duration-ms="48804" started-at="2020-10-08T06:01:22Z" finished-at="2020-10-08T06:02:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="clickOnSignInBtn" is-config="true" duration-ms="1098" started-at="2020-10-07T11:37:50Z" finished-at="2020-10-07T11:37:51Z">
+        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@5db250b4]" name="clickOnSignInBtn" is-config="true" duration-ms="10525" started-at="2020-10-08T06:02:10Z" finished-at="2020-10-08T06:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSignInBtn -->
-        <test-method status="PASS" signature="verifySignInTextVisibility()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="verifySignInTextVisibility" duration-ms="293" started-at="2020-10-07T11:37:51Z" finished-at="2020-10-07T11:37:52Z">
+        <test-method status="PASS" signature="verifySignInTextVisibility()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@5db250b4]" name="verifySignInTextVisibility" duration-ms="243" started-at="2020-10-08T06:02:21Z" finished-at="2020-10-08T06:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInTextVisibility -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="closeBrowser" is-config="true" duration-ms="109" started-at="2020-10-07T11:37:52Z" finished-at="2020-10-07T11:37:52Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@5db250b4]" name="closeBrowser" is-config="true" duration-ms="146" started-at="2020-10-08T06:02:21Z" finished-at="2020-10-08T06:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
