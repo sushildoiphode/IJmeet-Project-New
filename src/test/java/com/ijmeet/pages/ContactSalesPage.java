@@ -34,7 +34,7 @@ public class ContactSalesPage {
 	public static WebElement sendButton;
 	
 	 public static boolean isUserNameCheckBoxVisible() {
-		boolean verify= Keywords.isElementDisplayed("XPATH", "//input[@name='user_name']");
+		boolean verify= Keywords.isElementDisplayed("XPATH", userName);
 		return verify;
 	 }
 	
