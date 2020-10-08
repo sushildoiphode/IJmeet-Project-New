@@ -5,9 +5,9 @@
     <classes>
       <class name="com.ijmeet.functionaltests.SignInPageTest">
         <methods>
+          <include name="verifyEmailAddressTextboxVisibilityTest"/>
           <include name="clickOnSignInBtn"/>
           <include name="closeBrowser"/>
-          <include name="verifySignInTextVisibility"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->

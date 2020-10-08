@@ -12,16 +12,47 @@ import com.ijmeet.util.TestBase;
 
 public class SignInPageTest extends TestBase{
 	@BeforeMethod
-	private void clickOnSignInBtn() {
+	public void clickOnSignInBtn() {
 		Constant.driver.findElement(By.xpath("//a[@href='https://ijmeet.com/login']")).click();;
 	}
 	
 	@Test
 	public void verifySignInTextVisibility() {
 		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
-		String actualText=sign.isSignInText();
+		String actualText=sign.isSignInTextVisible();
 		String expectedText= "Sign In";
 		Assert.assertEquals(actualText, expectedText,"Text not match");
 	}
+	
+	@Test
+	public void verifyEmailAddressLabelVisibilityTest() {
+		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
+		String actualText=sign.isEmailAddresslabelvisible();
+		String expectedText= "Email Address";
+		Assert.assertEquals(actualText, expectedText,"Label not match");
+	}
+	
+	@Test
+	public void verifyPasswordLabelVisibilityTest() {
+		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
+		String actualText=sign.isPasswordlabelvisible();
+		String expectedText= "Password";
+		Assert.assertEquals(actualText, expectedText,"Label not match");
+	}
+	
+	@Test
+	public void verifyEmailAddressTextboxVisibilityTest() {
+		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
+		boolean email=sign.isEmailAddressTextboxVisible();
+		Assert.assertTrue(email,"Email Address Textbox not visible");
+	}
+	
+	@Test
+	public void verifyPasswordTextboxVisibilityTest() {
+		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
+		boolean password=sign.isPasswordTextboxVisible();
+		Assert.assertTrue(password,"Password Textbox not visible");
+	}
+	
 
 }
