@@ -12,4 +12,5 @@ public class Constant {
 	public static List<WebElement> ele;
     public static WebElement element;
 	public static FluentWait wait;
+	public static int count;
 }

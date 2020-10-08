@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -12,6 +13,33 @@
           </reporter-output>
         </test-method> <!-- launchBrowser -->
       </class> <!-- com.ijmeet.package1.SignUpTests -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="314221" started-at="2020-10-05T17:45:17Z" finished-at="2020-10-05T17:50:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="314221" started-at="2020-10-05T17:45:17Z" finished-at="2020-10-05T17:50:31Z">
+      <class name="com.ijmeet.functionaltests.SignInPageTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@d83da2e]" name="openBrowser" is-config="true" duration-ms="136259" started-at="2020-10-05T17:45:17Z" finished-at="2020-10-05T17:47:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@d83da2e]" name="clickOnSignInBtn" is-config="true" duration-ms="175517" started-at="2020-10-05T17:47:33Z" finished-at="2020-10-05T17:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignInBtn -->
+        <test-method status="PASS" signature="verifySignInTextVisibility()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@d83da2e]" name="verifySignInTextVisibility" duration-ms="127" started-at="2020-10-05T17:50:29Z" finished-at="2020-10-05T17:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInTextVisibility -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@d83da2e]" name="closeBrowser" is-config="true" duration-ms="2266" started-at="2020-10-05T17:50:29Z" finished-at="2020-10-05T17:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->
+>>>>>>> c1a36ff173649b241c6da54bd60e8b924e1e645f
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

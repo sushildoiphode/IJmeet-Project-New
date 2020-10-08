@@ -34,7 +34,7 @@ public class Keywords {
 		     default:
 			System.out.println("Open url successfully");
 		}
-=======
+
 		switch (browserName) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
