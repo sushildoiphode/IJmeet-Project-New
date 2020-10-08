@@ -1,5 +1,6 @@
 package com.ijmeet.functionaltests;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,13 +10,16 @@ import com.ijmeet.util.FileUtil;
 import com.ijmeet.util.TestBase;
 
 
-public class HomepageTests extends TestBase {
+public class HomePageTests extends TestBase {
+	private static Logger log = Logger.getLogger(HomePageTests.class);
+	
 
 	@Test
 	public void verifyIsLogoPresent() {
 
 		boolean flag=Keywords.isElementDisplayed(FileUtil.getLocator("homepage.logo")[0],FileUtil.getLocator("homepage.logo")[1]);
-		System.out.println("logo is present: "+flag);
+		
+		log.info("logo is present"+flag);
 		Assert.assertTrue(flag);
 	}
 	
@@ -27,4 +31,5 @@ public class HomepageTests extends TestBase {
 		Assert.assertEquals(expectedTitle,actualTitle);
 
 	}
+	
 }
