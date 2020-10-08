@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Set;
 
 import javax.imageio.ImageIO;
 
@@ -30,7 +31,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
-
 
 public class Keywords {
 	private static Logger log = Logger.getLogger(Keywords.class);
@@ -190,18 +190,18 @@ public class Keywords {
 		}
 	}
 
-			private static String getDateAndTime() {
-				LocalDateTime now = LocalDateTime.now();
-				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
-				String formatteddate = now.format(date);
-				return formatteddate;
+	private static String getDateAndTime() {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
+		String formatteddate = now.format(date);
+		return formatteddate;
 	}
 
-			private static String getDate() {
-				LocalDateTime now = LocalDateTime.now();
-				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
-				String formattedDate1 = now.format(date);
-				return formattedDate1;
+	private static String getDate() {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
+		String formattedDate1 = now.format(date);
+		return formattedDate1;
 	}
 
 	public void fullPageScreenShot() {
@@ -239,5 +239,16 @@ public class Keywords {
 
 	public static void quitBrowser() {
 		Constant.driver.quit();
+	}
+
+	public static void getWindowHandles() {
+		String parent = Constant.driver.getWindowHandle();
+		Set<String> childWindow = Constant.driver.getWindowHandles();
+		for (String window : childWindow) {
+			if (!window.equals(parent)) {
+				Constant.driver.switchTo().window(window);
+			}
+		}
+
 	}
 }
