@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ijmeet.functionaltests.SignInPageTest">
+      <class name="com.ijmeet.functionaltests.HomepageTests">
         <methods>
-          <include name="clickOnSignInBtn"/>
           <include name="closeBrowser"/>
-          <include name="verifySignInTextVisibility"/>
+          <include name="verifyIsLogoPresent"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->
+      </class> <!-- com.ijmeet.functionaltests.HomepageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

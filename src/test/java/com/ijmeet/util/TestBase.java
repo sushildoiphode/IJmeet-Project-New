@@ -15,7 +15,7 @@ public class TestBase {
 	
 		Keywords.openBrowser("chrome");
 		Keywords.launchUrl("https://ijmeet.com/");
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 	}
 	@AfterClass
 	public void closeBrowser() {

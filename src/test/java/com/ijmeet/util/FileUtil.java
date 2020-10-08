@@ -6,38 +6,33 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class FileUtil {
-	public static void main(String[] args) {
-		getLocator("homepage.menu-items");
-	}
+	
 	/**
-	 * This method will open ObjectRepository.properties and will return value asociated with key
+	 * This method will open ObjectRepository.properties and will return value associated with key
 	 * @param locatorName
 	 * @return value in form of{@code String}
 	 */
-	public static String[] getLocator(String locatorName) {
-
-		String value=null;
+	public static String[] getLocator(String key) {
+		String[] values = null;
 		String path=System.getProperty("user.dir");
-		String[] locator=new String[2];
-		System.out.println(path);
+		//System.out.println(path);
 		try {
+			
+			FileInputStream fis = new FileInputStream(path+"/src/test/resources/ObjectRepository.properties");
+			Properties prop = new Properties();
+			prop.load(fis);
+			String part = prop.getProperty(key);
+			values = part.split("##");
+			//System.out.println("Locator Type: " + values[0]);
+			//System.out.println("Locator Value: " + values[1]);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 
-			FileInputStream file=new FileInputStream(path+"src/test/resources/ObjectRepository.propertie");
-			Properties prop=new Properties();
-			prop.load(file);
-			locator[0]=prop.getProperty(locatorName).split("##")[0];
-			locator[1]=prop.getProperty(locatorName).split("##")[1];
-			System.out.println("locator0 "+locator[0]);
-			System.out.println("locator1 "+locator[1]);
-			return locator;
-		}catch(FileNotFoundException e) {
-			return null;
-
-
-		}catch(IOException e)	{
-			return null;
+			e.printStackTrace();
 
 		}
+		return values;
 
 	}
 }
