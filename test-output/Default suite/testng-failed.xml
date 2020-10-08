@@ -3,6 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+
+      <class name="com.ijmeet.functionaltests.HomepageTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyIsLogoPresent"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.ijmeet.functionaltests.HomepageTests -->
+
       <class name="com.ijmeet.functionaltests.ContactSalesTest">
         <methods>
           <include name="isNameTextBoxAvailableTest"/>
@@ -11,6 +20,7 @@
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->
+
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
