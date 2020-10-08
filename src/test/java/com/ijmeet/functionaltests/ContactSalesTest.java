@@ -1,5 +1,6 @@
 package com.ijmeet.functionaltests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,6 +21,7 @@ public class ContactSalesTest extends TestBase {
 	@BeforeMethod
 	public void initializePage() {
 		contact = new ContactSalesPage();
+		Constant.driver.findElement(By.xpath("//*[@id=\"navbarContent\"]/ul/li[3]/a")).click();;
 	}
 	
 	@Test
@@ -30,8 +32,13 @@ public class ContactSalesTest extends TestBase {
 //		log.info("HomePage is available for IJmeet");
 
 	}
-	
+	@Test
 	public void isNameTextBoxAvailableTest() {
+		boolean verify=contact.isUserNameCheckBoxVisible();
+		Assert.assertTrue(verify);
+	}
+	
+	public void isNameTextBoxClickableTest() {
 		
 	}
 

@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="155886" started-at="2020-10-07T18:28:17Z" finished-at="2020-10-07T18:30:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="155886" started-at="2020-10-07T18:28:17Z" finished-at="2020-10-07T18:30:53Z">
+      <class name="com.ijmeet.functionaltests.SignInPageTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="openBrowser" is-config="true" duration-ms="99366" started-at="2020-10-07T18:28:17Z" finished-at="2020-10-07T18:29:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="clickOnSignInBtn" is-config="true" duration-ms="41301" started-at="2020-10-07T18:29:56Z" finished-at="2020-10-07T18:30:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignInBtn -->
+        <test-method status="PASS" signature="verifyEmailAddressLabelVisibilityTest()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="verifyEmailAddressLabelVisibilityTest" duration-ms="79" started-at="2020-10-07T18:30:37Z" finished-at="2020-10-07T18:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailAddressLabelVisibilityTest -->
+        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="clickOnSignInBtn" is-config="true" duration-ms="2137" started-at="2020-10-07T18:30:38Z" finished-at="2020-10-07T18:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignInBtn -->
+        <test-method status="PASS" signature="verifyEmailAddressTextboxVisibilityTest()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="verifyEmailAddressTextboxVisibilityTest" duration-ms="78" started-at="2020-10-07T18:30:40Z" finished-at="2020-10-07T18:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailAddressTextboxVisibilityTest -->
+        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="clickOnSignInBtn" is-config="true" duration-ms="3381" started-at="2020-10-07T18:30:40Z" finished-at="2020-10-07T18:30:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignInBtn -->
+        <test-method status="PASS" signature="verifyPasswordLabelVisibilityTest()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="verifyPasswordLabelVisibilityTest" duration-ms="72" started-at="2020-10-07T18:30:43Z" finished-at="2020-10-07T18:30:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordLabelVisibilityTest -->
+        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="clickOnSignInBtn" is-config="true" duration-ms="5042" started-at="2020-10-07T18:30:43Z" finished-at="2020-10-07T18:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignInBtn -->
+        <test-method status="PASS" signature="verifyPasswordTextboxVisibilityTest()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="verifyPasswordTextboxVisibilityTest" duration-ms="105" started-at="2020-10-07T18:30:48Z" finished-at="2020-10-07T18:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordTextboxVisibilityTest -->
+        <test-method status="PASS" signature="clickOnSignInBtn()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="clickOnSignInBtn" is-config="true" duration-ms="4149" started-at="2020-10-07T18:30:48Z" finished-at="2020-10-07T18:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignInBtn -->
+        <test-method status="PASS" signature="verifySignInTextVisibility()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="verifySignInTextVisibility" duration-ms="58" started-at="2020-10-07T18:30:53Z" finished-at="2020-10-07T18:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInTextVisibility -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignInPageTest@27c86f2d]" name="closeBrowser" is-config="true" duration-ms="74" started-at="2020-10-07T18:30:53Z" finished-at="2020-10-07T18:30:53Z">
+=======
+
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+>>>>>>> ff79fb61e6d1780af5291d6988e16a891d58b8b7
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="23844" started-at="2020-10-08T17:35:51Z" finished-at="2020-10-08T17:36:15Z">
@@ -15,11 +75,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIsLogoPresent -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@6dbb137d]" name="closeBrowser" is-config="true" duration-ms="76" started-at="2020-10-08T17:36:15Z" finished-at="2020-10-08T17:36:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.ijmeet.functionaltests.HomePageTests -->
+=======
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.ijmeet.functionaltests.HomepageTests@5bfa9431]" name="verifyTitle" duration-ms="12" started-at="2020-10-08T15:26:31Z" finished-at="2020-10-08T15:26:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.HomepageTests@5bfa9431]" name="closeBrowser" is-config="true" duration-ms="66" started-at="2020-10-08T15:26:31Z" finished-at="2020-10-08T15:26:31Z">
+>>>>>>> 30f29a7b901f035bddb9bba0fedb41d986394d2d
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ijmeet.functionaltests.HomepageTests -->
+
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53828" started-at="2020-10-08T07:20:57Z" finished-at="2020-10-08T07:21:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="53828" started-at="2020-10-08T07:20:57Z" finished-at="2020-10-08T07:21:51Z">
+      <class name="com.ijmeet.functionaltests.ContactSalesTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="openBrowser" is-config="true" duration-ms="48618" started-at="2020-10-08T07:20:57Z" finished-at="2020-10-08T07:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="initializePage()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="initializePage" is-config="true" duration-ms="4734" started-at="2020-10-08T07:21:46Z" finished-at="2020-10-08T07:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method status="PASS" signature="isNameTextBoxAvailableTest()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="isNameTextBoxAvailableTest" duration-ms="289" started-at="2020-10-08T07:21:51Z" finished-at="2020-10-08T07:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isNameTextBoxAvailableTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="closeBrowser" is-config="true" duration-ms="108" started-at="2020-10-08T07:21:51Z" finished-at="2020-10-08T07:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->
+
+>>>>>>> ff79fb61e6d1780af5291d6988e16a891d58b8b7
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

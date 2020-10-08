@@ -3,13 +3,30 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+
       <class name="com.ijmeet.functionaltests.HomepageTests">
         <methods>
+<<<<<<< HEAD
+          <include name="verifyEmailAddressTextboxVisibilityTest"/>
+          <include name="clickOnSignInBtn"/>
+          <include name="closeBrowser"/>
+=======
           <include name="closeBrowser"/>
           <include name="verifyIsLogoPresent"/>
+>>>>>>> 30f29a7b901f035bddb9bba0fedb41d986394d2d
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.HomepageTests -->
+
+      <class name="com.ijmeet.functionaltests.ContactSalesTest">
+        <methods>
+          <include name="isNameTextBoxAvailableTest"/>
+          <include name="closeBrowser"/>
+          <include name="initializePage"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->
+
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
