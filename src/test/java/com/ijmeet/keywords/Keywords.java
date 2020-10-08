@@ -77,28 +77,28 @@ public class Keywords {
 		Constant.driver.navigate().forward();
 	}
 
-	public static WebElement getWebElement(String locatorType, String locatorValue) {
+	public static WebElement getWebElement(String locatorType, WebElement locatorValue) {
 		WebElement element = null;
 		switch (locatorType) {
 
 		case "XPATH":
-			element = Constant.driver.findElement(By.xpath(locatorValue));
+			element = locatorValue;
 			break;
 
 		case "CSS":
-			element = Constant.driver.findElement(By.cssSelector(locatorValue));
+			element = locatorValue;
 			break;
 
 		case "ID":
-			element = Constant.driver.findElement(By.id(locatorValue));
+			element = locatorValue;
 			break;
 
 		case "LINKTEXT":
-			element = Constant.driver.findElement(By.linkText(locatorValue));
+			element = locatorValue;
 			break;
 
 		case "PARTIALLINKTEXT":
-			element = Constant.driver.findElement(By.partialLinkText(locatorValue));
+			element = locatorValue;
 			break;
 		default:
 			log.info(" Invalid selector type");
@@ -106,57 +106,57 @@ public class Keywords {
 		return element;
 	}
 
-	public static void enterText(String locatorType, String locatorValue, String textToEnter) {
+	public static void enterText(String locatorType, WebElement locatorValue, String textToEnter) {
 		getWebElement(locatorType, locatorValue).sendKeys(textToEnter);
 	}
 
-	public static void clickOnElement(String locatorType, String locatorValue) {
+	public static void clickOnElement(String locatorType, WebElement locatorValue) {
 		getWebElement(locatorType, locatorValue).click();
 	}
 
-	public static void selectValueFromDropdown(String locatorType, String locatorValue, String textToSelect) {
+	public static void selectValueFromDropdown(String locatorType, WebElement locatorValue, String textToSelect) {
 		WebElement element = getWebElement(locatorType, locatorValue);
 		Select select = new Select(element);
 		select.selectByVisibleText(textToSelect);
 	}
 
-	public static boolean isElementDisplayed(String locatorType, String locatorValue) {
+	public static boolean isElementDisplayed(String locatorType, WebElement locatorValue) {
 		return getWebElement(locatorType, locatorValue).isDisplayed();
 	}
 
-	public static void mouseHover(String locatorType, String locatorValue) {
+	public static void mouseHover(String locatorType, WebElement locatorValue) {
 		WebElement element = getWebElement(locatorType, locatorValue);
 
 		Actions act = new Actions(Constant.driver);
 		act.moveToElement(element).build().perform();
 	}
 
-	public static String getTextOfElement(String locatorType, String locatorValue) {
+	public static String getTextOfElement(String locatorType, WebElement locatorValue) {
 		WebElement element1 = getWebElement(locatorType, locatorValue);
 		String text = element1.getText();
 		return text;
 	}
 
-	public static List<WebElement> getListOfWebelements(String locatorType, String locatorValue) {
+	public static List<WebElement> getListOfWebelements(String locatorType, WebElement locatorValue) {
 		List<WebElement> element = null;
 		switch (locatorType) {
 		case "XPATH":
-			element = Constant.driver.findElements(By.xpath(locatorValue));
+			element = (List<WebElement>) locatorValue;
 			break;
 		case "CSS":
-			element = Constant.driver.findElements(By.cssSelector(locatorValue));
+			element = (List<WebElement>) locatorValue;
 			break;
 		case "ID":
-			element = Constant.driver.findElements(By.id(locatorValue));
+			element = (List<WebElement>) locatorValue;
 			break;
 		case "LINK_TEXT":
-			element = Constant.driver.findElements(By.linkText(locatorValue));
+			element = (List<WebElement>) locatorValue;
 			break;
 		case "PARTIAL_LINK_TEXT":
-			element = Constant.driver.findElements(By.partialLinkText(locatorValue));
+			element = (List<WebElement>) locatorValue;
 			break;
 		case "CLASS":
-			element = Constant.driver.findElements(By.className(locatorValue));
+			element = (List<WebElement>) locatorValue;
 			break;
 		default:
 			break;
@@ -224,7 +224,7 @@ public class Keywords {
 		}
 	}
 
-	public static int displayListCount(String locatorType, String locatorValue) {
+	public static int displayListCount(String locatorType, WebElement locatorValue) {
 		List<WebElement> element = getListOfWebelements(locatorType, locatorValue);
 		for (WebElement ele : element) {
 			ele.getSize();
