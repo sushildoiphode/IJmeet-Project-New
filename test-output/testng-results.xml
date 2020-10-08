@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
@@ -24,6 +25,33 @@
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.ijmeet.functionaltests.HomepageTests -->
+
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53828" started-at="2020-10-08T07:20:57Z" finished-at="2020-10-08T07:21:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="53828" started-at="2020-10-08T07:20:57Z" finished-at="2020-10-08T07:21:51Z">
+      <class name="com.ijmeet.functionaltests.ContactSalesTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="openBrowser" is-config="true" duration-ms="48618" started-at="2020-10-08T07:20:57Z" finished-at="2020-10-08T07:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="initializePage()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="initializePage" is-config="true" duration-ms="4734" started-at="2020-10-08T07:21:46Z" finished-at="2020-10-08T07:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method status="PASS" signature="isNameTextBoxAvailableTest()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="isNameTextBoxAvailableTest" duration-ms="289" started-at="2020-10-08T07:21:51Z" finished-at="2020-10-08T07:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isNameTextBoxAvailableTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="closeBrowser" is-config="true" duration-ms="108" started-at="2020-10-08T07:21:51Z" finished-at="2020-10-08T07:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->
+
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
