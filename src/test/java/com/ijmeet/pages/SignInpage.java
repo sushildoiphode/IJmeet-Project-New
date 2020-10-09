@@ -2,10 +2,16 @@ package com.ijmeet.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.ijmeet.keywords.Keywords;
+import com.ijmeet.util.Constant;
 
 public class SignInpage {
+	
+	public SignInpage() {
+		PageFactory.initElements(Constant.driver, this);
+	}
 	 
 	@FindBy(xpath="//h4[text()=' Sign In ']")
 	private static WebElement signInText;
@@ -17,6 +23,8 @@ public class SignInpage {
 	private static WebElement emailAddressTextbox;
 	@FindBy(css = "input#password")
 	private static WebElement passwordTextbox;
+	@FindBy(xpath = "//a[@class='auth-link text-black']")
+	private static WebElement forgotYourPasswordLink;
 	
 	
 	public static String isSignInTextVisible() {
@@ -34,6 +42,8 @@ public class SignInpage {
 	public static boolean isPasswordTextboxVisible() {
 		return passwordTextbox.isDisplayed();
 	}
-	
+	public static boolean isForgotYourPasswordLinkVisible() {
+		return Keywords.isElementDisplayed("XPATH", forgotYourPasswordLink);
+	}
 
 }
