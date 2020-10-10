@@ -12,8 +12,9 @@ import com.ijmeet.util.TestBase;
 
 public class SignInPageTest extends TestBase{
 	@BeforeMethod
-	public void clickOnSignInBtn() {
-		Constant.driver.findElement(By.xpath("//a[@href='https://ijmeet.com/login']")).click();;
+	public void clickOnSignInBtn() throws InterruptedException {
+		Constant.driver.findElement(By.xpath("//a[@href='https://ijmeet.com/login']")).click();
+		Thread.sleep(3000);
 	}
 	
 	@Test
@@ -52,6 +53,13 @@ public class SignInPageTest extends TestBase{
 		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
 		boolean password=sign.isPasswordTextboxVisible();
 		Assert.assertTrue(password,"Password Textbox not visible");
+	}
+	
+	@Test
+	public void verifyForgotYourPasswordVisibilityTest() {
+		SignInpage sign=PageFactory.initElements(Constant.driver, SignInpage.class);
+		boolean forgotPassword=sign.isForgotYourPasswordLinkVisible();
+		Assert.assertTrue(forgotPassword,"Forgot your password link not visible");
 	}
 	
 
