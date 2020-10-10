@@ -11,6 +11,8 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -132,7 +134,21 @@ public class FEKeywords {
 		return Constant.count;
 	}
 
-	
+	public static boolean displayListOfItems(String locatorType, String locatorValue,String tagname) {
+		boolean Visible_menuItems= false;
+		WebElement menuItems= getWebElement(locatorType, locatorValue);
+		List<WebElement> elements=menuItems.findElements(By.tagName(tagname));
+		Iterator<WebElement> itr=elements.iterator();
+		List<String> itemsList=new ArrayList<String>();
+		while(itr.hasNext()) {
+			Visible_menuItems=itr.next().isDisplayed();
+			System.out.println(Visible_menuItems);
+		}
+
+		return Visible_menuItems;
+	}
+
+
 }
 
 

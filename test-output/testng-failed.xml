@@ -5,9 +5,15 @@
     <classes>
       <class name="com.ijmeet.functionaltests.SignInPageTest">
         <methods>
+
+          <include name="intializePage"/>
+          <include name="closeBrowser"/>
+          <include name="verifyIsAndroidAppStoreVisible"/>
+
           <include name="clickOnSignInBtn"/>
           <include name="closeBrowser"/>
           <include name="verifyForgotYourPasswordVisibilityTest"/>
+
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->

@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -190,18 +192,18 @@ public class Keywords {
 		}
 	}
 
-			private static String getDateAndTime() {
-				LocalDateTime now = LocalDateTime.now();
-				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
-				String formatteddate = now.format(date);
-				return formatteddate;
+	private static String getDateAndTime() {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
+		String formatteddate = now.format(date);
+		return formatteddate;
 	}
 
-			private static String getDate() {
-				LocalDateTime now = LocalDateTime.now();
-				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
-				String formattedDate1 = now.format(date);
-				return formattedDate1;
+	private static String getDate() {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
+		String formattedDate1 = now.format(date);
+		return formattedDate1;
 	}
 
 	public void fullPageScreenShot() {
@@ -231,6 +233,20 @@ public class Keywords {
 			Constant.count++;
 		}
 		return Constant.count;
+	}
+
+	public static boolean displayListOfItems(String locatorType, WebElement locatorValue,String tagname) {
+		boolean Visible_menuItems= false;
+		WebElement menuItems= getWebElement(locatorType, locatorValue);
+		List<WebElement> elements=menuItems.findElements(By.tagName(tagname));
+		Iterator<WebElement> itr=elements.iterator();
+		List<String> itemsList=new ArrayList<String>();
+		while(itr.hasNext()) {
+			Visible_menuItems=itr.next().isDisplayed();
+			System.out.println(Visible_menuItems);
+		}
+
+		return Visible_menuItems;
 	}
 
 	public static void closeBrowser() {
