@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Suite" duration-ms="47733" started-at="2020-10-10T08:38:00Z" finished-at="2020-10-10T08:38:48Z">
     <groups>
     </groups>
@@ -23,6 +24,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+=======
+  <suite name="Suite" duration-ms="33892" started-at="2020-10-08T04:02:36Z" finished-at="2020-10-08T04:03:10Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="33892" started-at="2020-10-08T04:02:36Z" finished-at="2020-10-08T04:03:10Z">
+      <class name="com.ijmeet.functionaltests.hostMeetingTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ijmeet.functionaltests.hostMeetingTest@184f6be2]" name="setUp" is-config="true" duration-ms="26996" started-at="2020-10-08T04:02:36Z" finished-at="2020-10-08T04:03:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyIsSignUpTextPresent()[pri:0, instance:com.ijmeet.functionaltests.hostMeetingTest@184f6be2]" name="verifyIsSignUpTextPresent" duration-ms="5998" started-at="2020-10-08T04:03:03Z" finished-at="2020-10-08T04:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIsSignUpTextPresent -->
+        <test-method status="PASS" signature="closeBrowserWindow()[pri:0, instance:com.ijmeet.functionaltests.hostMeetingTest@184f6be2]" name="closeBrowserWindow" is-config="true" duration-ms="825" started-at="2020-10-08T04:03:09Z" finished-at="2020-10-08T04:03:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserWindow -->
+>>>>>>> 9fdecb915193ab87cce0ed62c3cf42b34c42508c
       </class> <!-- com.ijmeet.functionaltests.hostMeetingTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

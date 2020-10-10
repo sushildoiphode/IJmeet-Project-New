@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.ijmeet.functionaltests.HomePageTests">
         <methods>
           <include name="closeBrowser"/>
@@ -19,6 +20,13 @@
           <include name="verifyIsSignUpTextPresent"/>
           <include name="verifyIsParagraphAvailable"/>
           <include name="openBrowser"/>
+=======
+      <class name="com.ijmeet.functionaltests.hostMeetingTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyIsSignUpTextPresent"/>
+          <include name="closeBrowserWindow"/>
+>>>>>>> 9fdecb915193ab87cce0ed62c3cf42b34c42508c
         </methods>
       </class> <!-- com.ijmeet.functionaltests.hostMeetingTest -->
     </classes>

@@ -32,7 +32,6 @@ import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-
 public class Keywords {
 	private static Logger log = Logger.getLogger(Keywords.class);
 
@@ -191,18 +190,18 @@ public class Keywords {
 		}
 	}
 
-			private static String getDateAndTime() {
-				LocalDateTime now = LocalDateTime.now();
-				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
-				String formatteddate = now.format(date);
-				return formatteddate;
+	private static String getDateAndTime() {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
+		String formatteddate = now.format(date);
+		return formatteddate;
 	}
 
-			private static String getDate() {
-				LocalDateTime now = LocalDateTime.now();
-				DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
-				String formattedDate1 = now.format(date);
-				return formattedDate1;
+	private static String getDate() {
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy_MM_dd");
+		String formattedDate1 = now.format(date);
+		return formattedDate1;
 	}
 
 	public void fullPageScreenShot() {
@@ -241,6 +240,10 @@ public class Keywords {
 	public static void quitBrowser() {
 		Constant.driver.quit();
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9fdecb915193ab87cce0ed62c3cf42b34c42508c
 	public static void getWindowHandles() {
 		String parent = Constant.driver.getWindowHandle();
 		Set<String> childWindow = Constant.driver.getWindowHandles();
@@ -251,4 +254,8 @@ public class Keywords {
 		}
 
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9fdecb915193ab87cce0ed62c3cf42b34c42508c

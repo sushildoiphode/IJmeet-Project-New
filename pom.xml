@@ -79,10 +79,12 @@
 			<artifactId>ashot</artifactId>
 			<version>1.5.4</version>
 		</dependency>
-		
-
 
 	</dependencies>
 
+<<<<<<< HEAD
 
 </project>
+=======
+</project>
+>>>>>>> 9fdecb915193ab87cce0ed62c3cf42b34c42508c
