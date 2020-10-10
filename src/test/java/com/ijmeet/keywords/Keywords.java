@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Set;
 
 import javax.imageio.ImageIO;
 
@@ -239,5 +240,15 @@ public class Keywords {
 
 	public static void quitBrowser() {
 		Constant.driver.quit();
+	}
+	public static void getWindowHandles() {
+		String parent = Constant.driver.getWindowHandle();
+		Set<String> childWindow = Constant.driver.getWindowHandles();
+		for (String window : childWindow) {
+			if (!window.equals(parent)) {
+				Constant.driver.switchTo().window(window);
+			}
+		}
+
 	}
 }
