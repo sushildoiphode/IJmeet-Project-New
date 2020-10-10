@@ -5,10 +5,10 @@
     <classes>
       <class name="com.ijmeet.functionaltests.HomePageTests">
         <methods>
+          <include name="intializePage"/>
           <include name="closeBrowser"/>
-          <include name="verifyPresenceOfAllMenuItems"/>
+          <include name="verifyIsAndroidAppStoreVisible"/>
           <include name="openBrowser"/>
-          <include name="verifyIsLogoPresent"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.HomePageTests -->
     </classes>

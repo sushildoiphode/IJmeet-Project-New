@@ -10,14 +10,14 @@ import org.testng.annotations.BeforeTest;
 import com.ijmeet.keywords.Keywords;
 
 public class TestBase {
-	@BeforeClass
+	@BeforeMethod
 	public void openBrowser() throws InterruptedException {
 	
 		Keywords.openBrowser("chrome");
 		Keywords.launchUrl("https://ijmeet.com/");
 		Thread.sleep(3000);
 	}
-	@AfterClass
+	@AfterMethod
 	public void closeBrowser() {
 		Keywords.closeBrowser();
 	}

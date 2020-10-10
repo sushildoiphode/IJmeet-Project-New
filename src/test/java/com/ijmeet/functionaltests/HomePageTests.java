@@ -23,8 +23,13 @@ import com.ijmeet.util.WaitFor;
 
 public class HomePageTests extends TestBase {
 	private static Logger log = Logger.getLogger(HomePageTests.class);
+	private HomePage home;
+	
+	@BeforeMethod
+	private void intializePage() {
+		home=new HomePage();
 
-
+	}
 
 	@Test
 	public void verifyIsHomePageVisible() {
@@ -56,25 +61,8 @@ public class HomePageTests extends TestBase {
 	@Test
 	public void verifyPresenceOfAllMenuItems() {
 
-		WaitFor.minTime();
-		WebElement menuItems=FEKeywords.getWebElement(FileUtil.getLocator("homepage.menu-items")[0],FileUtil.getLocator("homepage.menu-items")[1]);
-		List<WebElement> menuItemText=menuItems.findElements(By.tagName("a"));
-		Iterator<WebElement> itr=menuItemText.iterator();
-		List<String> expectedMenuTexts=new ArrayList<String>();
-		expectedMenuTexts.add("Join Meeting");
-		expectedMenuTexts.add("Host Meeting ");
-		expectedMenuTexts.add("Contact sales ");
-		expectedMenuTexts.add("Sign In ");
-		expectedMenuTexts.add("Sign Up ");
-		expectedMenuTexts.add("عربى");
-		List<String> actualMenuTexts=new ArrayList<String>();
-		while(itr.hasNext()) {
-			String menuText=itr.next().getText();
-			actualMenuTexts.add(menuText);
-		}
-		System.out.println(actualMenuTexts);
-		Assert.assertTrue(expectedMenuTexts.containsAll(actualMenuTexts), "few menu items are missing");
-
+		boolean menuItemsVisible=FEKeywords.displayListOfItems(FileUtil.getLocator("homepage.menu-items")[0],FileUtil.getLocator("homepage.menu-items")[1], "a");
+		Assert.assertTrue(menuItemsVisible);
 	}
 
 	@Test
@@ -116,7 +104,18 @@ public class HomePageTests extends TestBase {
 		String actualUrl=Constant.driver.getCurrentUrl();
 		String expectedUrl ="https://ijmeet.com/register";
 		Assert.assertEquals(expectedUrl,actualUrl);
-	}	
+	}
+	@Test
+	public void verifyAppsIconVisibleOnHomePage() {
+
+		boolean menuItemsVisible=FEKeywords.displayListOfItems(FileUtil.getLocator("homepage.icons")[0],FileUtil.getLocator("homepage.icons")[1], "a");
+		Assert.assertTrue(menuItemsVisible);
+	}
+	@Test
+	public void verifyIsAndroidAppStorePageVisible()  {
+		
+	}
+
 }
 
 
