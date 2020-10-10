@@ -37,6 +37,26 @@ public class ContactSalesPage {
 		boolean verify= Keywords.isElementDisplayed("XPATH", userName);
 		return verify;
 	 }
+	 
+	public void sendTextToUserNameCheckBox() {
+		userName.sendKeys("Deepak Dude");
+		
+	}
+	public static String getValueFromTextbox() {
+		return	userName.getAttribute("value");
+		}
+	
+	 public static boolean isEmailCheckBoxVisible() {
+			boolean verify= Keywords.isElementDisplayed("XPATH", email);
+			return verify;
+		 }
+	public void sendTextToEmailCheckBox() {
+		email.sendKeys("deepakdude938@gmail.com");
+		
+	}
+	public static String getValueFromEmailTextbox() {
+		return	email.getAttribute("value");
+		}
 	
 	
 

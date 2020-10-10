@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="9" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44858" started-at="2020-10-09T19:16:22Z" finished-at="2020-10-09T19:17:07Z">
+  <suite name="Default suite" duration-ms="42326" started-at="2020-10-10T08:57:11Z" finished-at="2020-10-10T08:57:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44858" started-at="2020-10-09T19:16:22Z" finished-at="2020-10-09T19:17:07Z">
-      <class name="com.ijmeet.functionaltests.HomePageTests">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@7c0c77c7]" name="openBrowser" is-config="true" duration-ms="44588" started-at="2020-10-09T19:16:22Z" finished-at="2020-10-09T19:17:07Z">
+    <test name="Default test" duration-ms="42326" started-at="2020-10-10T08:57:11Z" finished-at="2020-10-10T08:57:53Z">
+      <class name="com.ijmeet.functionaltests.ContactSalesTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="openBrowser" is-config="true" duration-ms="28805" started-at="2020-10-10T08:57:11Z" finished-at="2020-10-10T08:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyIsHomePageVisible()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@7c0c77c7]" name="verifyIsHomePageVisible" duration-ms="46" started-at="2020-10-09T19:17:07Z" finished-at="2020-10-09T19:17:07Z">
+        <test-method status="PASS" signature="initializePage()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="initializePage" is-config="true" duration-ms="3142" started-at="2020-10-10T08:57:40Z" finished-at="2020-10-10T08:57:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIsHomePageVisible -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@7c0c77c7]" name="closeBrowser" is-config="true" duration-ms="196" started-at="2020-10-09T19:17:07Z" finished-at="2020-10-09T19:17:07Z">
+        </test-method> <!-- initializePage -->
+        <test-method status="PASS" signature="isEmailTextBoxClickableTest()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="isEmailTextBoxClickableTest" duration-ms="10288" started-at="2020-10-10T08:57:43Z" finished-at="2020-10-10T08:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isEmailTextBoxClickableTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.ContactSalesTest@1df82230]" name="closeBrowser" is-config="true" duration-ms="55" started-at="2020-10-10T08:57:53Z" finished-at="2020-10-10T08:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.ijmeet.functionaltests.HomePageTests -->
+      </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

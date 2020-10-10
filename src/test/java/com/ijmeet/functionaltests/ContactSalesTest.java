@@ -37,8 +37,29 @@ public class ContactSalesTest extends TestBase {
 		boolean verify=contact.isUserNameCheckBoxVisible();
 		Assert.assertTrue(verify);
 	}
-	
-	public void isNameTextBoxClickableTest() {
+	@Test
+	public void isNameTextBoxClickableTest() throws InterruptedException {
+		contact.sendTextToUserNameCheckBox();
+		Thread.sleep(10000);
+		String actualValue=contact.getValueFromTextbox();
+		String expectedValue="Deepak Dude";
+		System.out.println(actualValue);
+		Assert.assertEquals(actualValue, expectedValue);
+		
+	}
+	@Test
+	public void isEmailTextBoxAvailableTest() {
+		boolean verify=contact.isEmailCheckBoxVisible();
+		Assert.assertTrue(verify);
+	}
+	@Test
+	public void isEmailTextBoxClickableTest() throws InterruptedException {
+		contact.sendTextToEmailCheckBox();
+		Thread.sleep(10000);
+		String actualValue=contact.getValueFromEmailTextbox();
+		String expectedValue="deepakdude938@gmail.com";
+		System.out.println(actualValue);
+		Assert.assertEquals(actualValue, expectedValue);
 		
 	}
 
