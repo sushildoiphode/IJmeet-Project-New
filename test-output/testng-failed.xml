@@ -3,6 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.ijmeet.functionaltests.HomePageTests">
+        <methods>
+          <include name="intializePage"/>
+          <include name="closeBrowser"/>
+          <include name="verifyIsBackToTopArrowVisible"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.ijmeet.functionaltests.HomePageTests -->
+=======
       <class name="com.ijmeet.functionaltests.SignupTests">
         <methods>
           <include name="closeBrowser"/>
@@ -11,6 +21,7 @@
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.ijmeet.functionaltests.SignupTests -->
+>>>>>>> b773b0bfd0f02776fb6c288bfba8cea9614f2996
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

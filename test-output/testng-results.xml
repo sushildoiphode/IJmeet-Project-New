@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="13" total="14" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="101663" started-at="2020-10-12T06:17:51Z" finished-at="2020-10-12T06:19:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="101663" started-at="2020-10-12T06:17:51Z" finished-at="2020-10-12T06:19:32Z">
+      <class name="com.ijmeet.functionaltests.HomePageTests">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@78b66d36]" name="openBrowser" is-config="true" duration-ms="93781" started-at="2020-10-12T06:17:51Z" finished-at="2020-10-12T06:19:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="intializePage()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@78b66d36]" name="intializePage" is-config="true" duration-ms="70" started-at="2020-10-12T06:19:24Z" finished-at="2020-10-12T06:19:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializePage -->
+        <test-method status="PASS" signature="verifyIsWindowsWebStorePageVisible()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@78b66d36]" name="verifyIsWindowsWebStorePageVisible" duration-ms="7266" started-at="2020-10-12T06:19:24Z" finished-at="2020-10-12T06:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIsWindowsWebStorePageVisible -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.HomePageTests@78b66d36]" name="closeBrowser" is-config="true" duration-ms="509" started-at="2020-10-12T06:19:32Z" finished-at="2020-10-12T06:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ijmeet.functionaltests.HomePageTests -->
+=======
+<<<<<<< HEAD
 <testng-results ignored="11" total="12" passed="1" failed="0" skipped="0">
 =======
 <<<<<<< HEAD
@@ -48,6 +75,7 @@
       </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->
 >>>>>>> c1a36ff173649b241c6da54bd60e8b924e1e645f
 >>>>>>> 0e164368035f194295fbaedf6e9041d55457ba13
+>>>>>>> b773b0bfd0f02776fb6c288bfba8cea9614f2996
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
