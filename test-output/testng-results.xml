@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="13" total="14" passed="1">
   <reporter-output>
   </reporter-output>
@@ -24,6 +25,57 @@
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.ijmeet.functionaltests.HomePageTests -->
+=======
+<<<<<<< HEAD
+<testng-results ignored="11" total="12" passed="1" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-05T18:17:42Z" name="Default suite" finished-at="2020-10-05T18:18:29Z" duration-ms="46969">
+    <groups>
+    </groups>
+    <test started-at="2020-10-05T18:17:42Z" name="Default test" finished-at="2020-10-05T18:18:29Z" duration-ms="46969">
+      <class name="com.ijmeet.package1.SignUpTests">
+        <test-method signature="launchBrowser()[pri:0, instance:com.ijmeet.package1.SignUpTests@327af41b]" started-at="2020-10-05T18:17:42Z" name="launchBrowser" finished-at="2020-10-05T18:18:29Z" duration-ms="46759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+      </class> <!-- com.ijmeet.package1.SignUpTests -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+>>>>>>> 0e164368035f194295fbaedf6e9041d55457ba13
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-11T17:27:47Z" name="Default suite" finished-at="2020-10-11T17:28:49Z" duration-ms="61052">
+    <groups>
+    </groups>
+    <test started-at="2020-10-11T17:27:47Z" name="Default test" finished-at="2020-10-11T17:28:49Z" duration-ms="61052">
+      <class name="com.ijmeet.functionaltests.SignupTests">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignupTests@7aaca91a]" started-at="2020-10-11T17:27:48Z" name="openBrowser" finished-at="2020-10-11T17:28:21Z" duration-ms="33613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="openSignUppage()[pri:0, instance:com.ijmeet.functionaltests.SignupTests@7aaca91a]" started-at="2020-10-11T17:28:21Z" name="openSignUppage" finished-at="2020-10-11T17:28:40Z" duration-ms="18643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSignUppage -->
+        <test-method signature="verifylenthemailtextbox()[pri:0, instance:com.ijmeet.functionaltests.SignupTests@7aaca91a]" started-at="2020-10-11T17:28:40Z" name="verifylenthemailtextbox" finished-at="2020-10-11T17:28:42Z" duration-ms="1866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylenthemailtextbox -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.ijmeet.functionaltests.SignupTests@7aaca91a]" started-at="2020-10-11T17:28:42Z" name="closeBrowser" finished-at="2020-10-11T17:28:49Z" duration-ms="6845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+<<<<<<< HEAD
+      </class> <!-- com.ijmeet.functionaltests.SignupTests -->
+=======
+      </class> <!-- com.ijmeet.functionaltests.SignInPageTest -->
+>>>>>>> c1a36ff173649b241c6da54bd60e8b924e1e645f
+>>>>>>> 0e164368035f194295fbaedf6e9041d55457ba13
+>>>>>>> b773b0bfd0f02776fb6c288bfba8cea9614f2996
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -25,18 +25,35 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.ijmeet.util.Constant;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 
 public class Keywords {
+	public static void openBrowser(String browser) {
+
+
+		switch(browser) 
+		{
+		     case "chrome":
+			 WebDriverManager.chromedriver().setup();
+			 Constant.driver = new ChromeDriver();
+			 break;
+		     case "firefox":
+			 WebDriverManager.firefoxdriver().setup();
+			 Constant.driver = new FirefoxDriver();
+			 break;
+		     case "IE":
+			 WebDriverManager.iedriver().setup();
+			 Constant.driver = new InternetExplorerDriver();
+			 break;
+		
+		     default:
+			System.out.println("Open url successfully");
+		}
 	private static Logger log = Logger.getLogger(Keywords.class);
 
 	public static void openBrowser(String browserName) {
@@ -56,6 +73,7 @@ public class Keywords {
 			break;
 
 		default:
+			System.out.println("Open url successfully");
 			log.info(" Invalid browser name");
 		}
 	}
@@ -65,6 +83,7 @@ public class Keywords {
 		log.info(" Url is launch successfully");
 	}
 
+<<<<<<< HEAD
 	public static void clearCookies() {
 		Constant.driver.manage().deleteAllCookies();
 	}
@@ -82,6 +101,9 @@ public class Keywords {
 	}
 
 	public static WebElement getWebElement(String locatorType, WebElement locatorValue) {
+=======
+	public static WebElement getWebElement(String locatorType, String locatorValue) {
+>>>>>>> 0e164368035f194295fbaedf6e9041d55457ba13
 		WebElement element = null;
 		switch (locatorType) {
 
@@ -107,6 +129,7 @@ public class Keywords {
 		default:
 			log.info(" Invalid selector type");
 		}
+
 		return element;
 	}
 
@@ -279,4 +302,5 @@ public class Keywords {
 	public static void quitBrowser() {
 		Constant.driver.quit();
 	}
+	
 }

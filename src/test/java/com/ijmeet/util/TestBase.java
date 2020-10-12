@@ -15,10 +15,11 @@ public class TestBase {
 	
 		Keywords.openBrowser("chrome");
 		Keywords.launchUrl("https://ijmeet.com/");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	}
 	@AfterMethod
-	public void closeBrowser() {
+	public void closeBrowser() throws InterruptedException {
+		Thread.sleep(5000);
 		Keywords.closeBrowser();
 	}
 	
