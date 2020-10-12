@@ -13,11 +13,13 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -247,6 +249,27 @@ public class Keywords {
 		}
 
 		return Visible_menuItems;
+	}
+
+	public static String switchToChildWindow() {
+		String url=null;
+		String mainwindow = Constant.driver.getWindowHandle();
+		Set<String> set = Constant.driver.getWindowHandles();
+		Iterator<String> itr = set.iterator();
+		while (itr.hasNext()) {
+			String childwindow = itr.next();
+			if (!mainwindow.equals(childwindow)) {
+				Constant.driver.switchTo().window(childwindow);
+				url=Constant.driver.switchTo().window(childwindow).getCurrentUrl();
+			}
+		}
+		return url;
+	}
+
+	public static void scrollingDown() {
+		JavascriptExecutor js = (JavascriptExecutor) Constant.driver;
+		js.executeScript("window.scrollBy(0,1000)");
+
 	}
 
 	public static void closeBrowser() {

@@ -24,7 +24,7 @@ import com.ijmeet.util.WaitFor;
 public class HomePageTests extends TestBase {
 	private static Logger log = Logger.getLogger(HomePageTests.class);
 	private HomePage home;
-	
+
 	@BeforeMethod
 	private void intializePage() {
 		home=new HomePage();
@@ -69,7 +69,6 @@ public class HomePageTests extends TestBase {
 	public  void verifyIsJoinMeetingPageAvailable(){
 		FEKeywords.clickOnElement(FileUtil.getLocator("homepage.joinmeeting")[0],FileUtil.getLocator("homepage.joinmeeting")[1]);
 		String actualUrl=Constant.driver.getCurrentUrl();
-		System.out.println(actualUrl);
 		String expectedUrl ="https://ijmeet.com/app";
 		Assert.assertEquals(expectedUrl,actualUrl);
 	}
@@ -105,17 +104,60 @@ public class HomePageTests extends TestBase {
 		String expectedUrl ="https://ijmeet.com/register";
 		Assert.assertEquals(expectedUrl,actualUrl);
 	}
+
+	//		@Test
+	//		public void verifyIsArebicLanguageSelected() {
+	//			home.clickOnLanguageTab();
+	//			//WaitFor.minTime();
+	//			String text=FEKeywords.getTextOfElement(FileUtil.getLocator("homepage.language")[0],FileUtil.getLocator("homepage.language")[1]);
+	//			System.out.println(text);
+	//		}
+
 	@Test
 	public void verifyAppsIconVisibleOnHomePage() {
 
 		boolean menuItemsVisible=FEKeywords.displayListOfItems(FileUtil.getLocator("homepage.icons")[0],FileUtil.getLocator("homepage.icons")[1], "a");
 		Assert.assertTrue(menuItemsVisible);
 	}
+
 	@Test
 	public void verifyIsAndroidAppStorePageVisible()  {
-		
+		home.clickOnAndroidAppStore();
+		String actualUrl=FEKeywords.switchToChildWindow();
+		String expectedUrl="https://play.google.com/store/apps/details?id=com.gcnt.ijmeet";
+		Assert.assertEquals(expectedUrl, actualUrl);
 	}
 
+	@Test
+	public void verifyIsIosAppStorePageVisible()  {
+		home.clicOnkAppleAppStore();
+		String actualUrl=FEKeywords.switchToChildWindow();
+		String expectedUrl="https://apps.apple.com/us/app/id1524001778";
+		Assert.assertEquals(expectedUrl, actualUrl);
+	}
+
+	@Test
+	public void verifyIsWindowsWebStorePageVisible()  {
+		home.clickOnWindowsWebStore();
+		String actualUrl=FEKeywords.switchToChildWindow();
+		String expectedUrl="https://www.microsoft.com/en-in/p/ijmeet/9ns1d2jcx4v0?activetab=pivot:overviewtab";
+		Assert.assertEquals(expectedUrl, actualUrl);
+	}
+
+	@Test
+	public void verifyIsBackToTopArrowVisible(){
+		FEKeywords.scrollingDown();
+		try {
+			Thread.sleep(3000);
+			boolean	arrow_Visible=home.isBacktoTopArrowVisible();
+			Assert.assertTrue(arrow_Visible, "Back to Top Arrow is not visible");
+		} catch (InterruptedException e) {
+
+			e.printStackTrace();
+		}
+
+
+	}
 }
 
 

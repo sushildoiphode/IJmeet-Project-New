@@ -3,23 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ijmeet.functionaltests.ContactSalesTest">
+      <class name="com.ijmeet.functionaltests.HomePageTests">
         <methods>
-          <include name="isEmailTextBoxClickableTest"/>
-          <include name="closeBrowser"/>
-          <include name="initializePage"/>
-
           <include name="intializePage"/>
           <include name="closeBrowser"/>
-          <include name="verifyIsAndroidAppStoreVisible"/>
-
-          <include name="clickOnSignInBtn"/>
-          <include name="closeBrowser"/>
-          <include name="verifyForgotYourPasswordVisibilityTest"/>
-
+          <include name="verifyIsBackToTopArrowVisible"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.ijmeet.functionaltests.ContactSalesTest -->
+      </class> <!-- com.ijmeet.functionaltests.HomePageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
