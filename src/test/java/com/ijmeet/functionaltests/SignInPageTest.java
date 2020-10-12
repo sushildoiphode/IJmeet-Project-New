@@ -10,7 +10,7 @@ import com.ijmeet.pages.SignInpage;
 import com.ijmeet.util.Constant;
 import com.ijmeet.util.TestBase;
 
-public class SignInPageTest extends TestBase{
+public class SignInPageTest extends TestBase{  
 	@BeforeMethod
 	public void clickOnSignInBtn() throws InterruptedException {
 		Constant.driver.findElement(By.xpath("//a[@href='https://ijmeet.com/login']")).click();
